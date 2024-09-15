@@ -1,3 +1,5 @@
+# diagrama de barras de casos y muertes en main.R
+
 # diagrama de barras SEXO
 ggplot(df_sexos, aes(x = Categoria, y = `Frecuencia Absoluta`)) +   
   geom_bar(stat = "identity", fill = "purple") +   

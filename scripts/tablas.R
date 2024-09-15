@@ -1,3 +1,5 @@
+# tabla de casos y muertes en main.R
+
 # tabla de frecuencias SEXO
 sexos <- table(Datos_Chihuahua$SEXO)
 sexos <- cbind('Frecuencia Absoluta' = sexos, 
