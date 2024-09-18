@@ -8,6 +8,12 @@ ggplot(df_sexos, aes(x = Categoria, y = `Frecuencia Absoluta`)) +
   labs(title = "Diagrama de Barras: Frecuencia Absoluta sexo", x = "Categoría", y = "Frecuencia Absoluta") +   
   theme_minimal()
 
+# diagrama de barras TIPO_PACIENTE
+ggplot(df_pacientes, aes(x = Categoria, y = `Frecuencia Absoluta`)) +   
+  geom_bar(stat = "identity", fill = "purple") +   
+  labs(title = "Diagrama de Barras: Frecuencia Absoluta tipo paciente", x = "Categoría", y = "Frecuencia Absoluta") +   
+  theme_minimal()
+
 # diagrama de barras DIABETES
 ggplot(df_diabetes, aes(x = Categoria, y = `Frecuencia Absoluta`)) +   
   geom_bar(stat = "identity", fill = "purple") +   

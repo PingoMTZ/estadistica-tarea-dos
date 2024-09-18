@@ -8,6 +8,14 @@ sexos <- cbind('Frecuencia Absoluta' = sexos,
 df_sexos <- as.data.frame(sexos)
 df_sexos$Categoria <- rownames(df_sexos)  
 
+# tabla de frecuencias TIPO_PACIENTE
+pacientes <- table(Datos_Chihuahua$TIPO_PACIENTE)
+pacientes <- cbind('Frecuencia Absoluta' = pacientes, 
+               'Frecuencia Relativa' = prop.table(pacientes),
+               'Porcentaje'=prop.table(pacientes)*100)
+df_pacientes <- as.data.frame(pacientes)
+df_pacientes$Categoria <- rownames(df_pacientes)  
+
 # tabla de frecuencias DIABETES
 diabetes <- table(Datos_Chihuahua$DIABETES)
 diabetes <- cbind('Frecuencia Absoluta' = diabetes, 
