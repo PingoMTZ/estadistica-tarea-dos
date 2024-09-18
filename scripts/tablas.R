@@ -39,3 +39,13 @@ intubado <- cbind('Frecuencia Absoluta' = intubado,
                   'Porcentaje'=prop.table(intubado)*100)
 df_intubado <- as.data.frame(intubado)
 df_intubado$Categoria <- rownames(df_intubado)
+
+# Tablas de doble entrada ----
+
+addmargins(table(Datos_Chihuahua$SEXO, Datos_Chihuahua$TIPO_PACIENTE), margin = 1)
+
+addmargins(table(Datos_Chihuahua$SEXO, Datos_Chihuahua$DIABETES), margin = 1)
+
+addmargins(table(Datos_Chihuahua$SEXO, Datos_Chihuahua$OBESIDAD), margin = 1)
+
+addmargins(table(Datos_Chihuahua$TIPO_PACIENTE, Datos_Chihuahua$OBESIDAD), margin = 1)

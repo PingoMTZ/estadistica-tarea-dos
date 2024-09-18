@@ -23,14 +23,7 @@ Datos_Chihuahua <- Datos_Chihuahua %>%
          OBESIDAD = factor(OBESIDAD, levels = c(1, 2),
                            labels = c("SI", "NO")))
 
-# Herramientas de Estadística Descriptiva Vista en Clase
-# - Tablas de Frecuencia y de Doble Entrada
-# - Diagramas de Barras
-# - Histogramas
-# - Percentiles y Cuartiles
-# - Diagramas de Cajas
-# - Media, Mediana y Moda
-# - Rango, Varianza y Desviación Estándar
+
 
 # Fecha de Síntomas de Pacientes
 Tabla_Sintomas <- Datos_Chihuahua %>% 
